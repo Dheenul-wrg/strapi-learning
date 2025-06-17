@@ -20,6 +20,12 @@
       "relation": "manyToMany",
       "target": "api::restaurant.restaurant",
       "inversedBy": "categories"
+    },
+    "food_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::food-item.food-item",
+      "mappedBy": "category"
     }
   }
 }
